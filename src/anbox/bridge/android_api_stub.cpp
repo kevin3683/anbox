@@ -16,7 +16,7 @@
  */
 
 #include "anbox/bridge/android_api_stub.h"
-#include "anbox/config.h"
+#include "anbox/system_configuration.h"
 #include "anbox/logger.h"
 #include "anbox/rpc/channel.h"
 #include "anbox/utils.h"
@@ -30,7 +30,7 @@
 namespace fs = boost::filesystem;
 
 namespace {
-constexpr const std::chrono::milliseconds default_rpc_call_timeout{5000};
+constexpr const std::chrono::milliseconds default_rpc_call_timeout{30000};
 } // namespace
 
 namespace anbox {
